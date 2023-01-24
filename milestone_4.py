@@ -25,5 +25,6 @@ class Hangman():
             else:
                 self.list_of_guesses.append(guess)
                 self.check_guess(guess)
+            if len(self.list_of_guesses) == len(self.word):
                 break
 
