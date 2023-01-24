@@ -32,7 +32,7 @@ class Hangman():
                 break
 
 def play_game(word_list):
-    num_lives = 4
+    num_lives = 2
     game = Hangman(word_list,num_lives)
 
     while True:
