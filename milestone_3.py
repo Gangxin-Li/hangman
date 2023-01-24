@@ -14,9 +14,8 @@ def check_guess(guess):
         return False
 def ask_for_input():
     guess = input()
-    res = check_guess(guess)
-    if res:
-        return
+    if len(guess)==1 and guess.isalpha:
+        res = check_guess(guess)
 while True:
     ask_for_input()
 
