@@ -1,5 +1,5 @@
 while(True):
-    guess = input("Guessing a letter")
+    guess = input()
     if(len(guess)==1 and guess.isalpha):
         break
     else:
