@@ -14,7 +14,7 @@ class Hangman():
         for i in range(len(self.word)):
             if guess == self.word[i]:
                 self.word_guessed[i] = self.word[i]
-                self.num_letters -= 1
+            self.num_letters -= 1
     def ask_for_input(self):
         while True:
             guess = input("Guess a letter")
