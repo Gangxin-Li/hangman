@@ -7,3 +7,17 @@ class Hangman():
         self.num_lives = num_lives
         self.word_list = word_list
         self.list_of_guesses=[]
+    def check_guess(self,guess):
+        guess = guess.lower()
+        if guess in self.word:
+            print(f"Good guess! {guess} is in the word.")
+    def as_for_input(self):
+        while True:
+            guess = input("Guess a letter")
+            if len(guess)==1 and guess.isalpha:
+                print("Invalid letter. Please, enter a single alphabetical character.")
+            elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
+            else:
+                self.check_guess(guess)
+
