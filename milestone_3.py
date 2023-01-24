@@ -1,9 +1,9 @@
 import random
 secret_list = ['apple','watermelon','fruits1','fruits2','fruits3']
-secret = random.choice(secret_list)
+word = random.choice(secret_list)
 while True:
     guess = input()
-    if(guess in secret):
+    if(guess in word):
         print("Good guess! {guess} is in the word.".format(guess=guess))
         break
     else:
