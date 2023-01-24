@@ -9,19 +9,11 @@
 - Example: The FastAPI framework allows for fast and easy construction of APIs and is combined with pydantic, which is used to assert the data types of all incoming data to allow for easier processing later on. The server is ran locally using uvicorn, a library for ASGI server implementation.
   
 ```python
-"""import random
+import random
 word_list = ['apple','watermelon','fruits1','fruits2','fruits3']
 word = random.choice(word_list)
 print(word_list)
 print(word)
-
-
-guess = input()
-
-if(len(guess)==1 and guess.isalpha):
-    print("Good guess!")
-else:
-    print("Oops! That is not a valid input.")"""
 ```
 
 > Insert an image/screenshot of what you have built so far here.
@@ -39,19 +31,12 @@ else:
 - The above command is used to check whether the topic has been created successfully, once confirmed the API script is edited to send data to the created kafka topic. The docker container has an attached volume which allows editing of files to persist on the container. The result of this is below:
 
 ```python
-"""import random
-word_list = ['apple','watermelon','fruits1','fruits2','fruits3']
-word = random.choice(word_list)
-print(word_list)
-print(word)
-
-
 guess = input()
 
 if(len(guess)==1 and guess.isalpha):
     print("Good guess!")
 else:
-    print("Oops! That is not a valid input.")"""
+    print("Oops! That is not a valid input.")
 ```
 
 > Insert screenshot of what you have built working.
